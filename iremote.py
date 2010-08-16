@@ -11,9 +11,9 @@ Usage:
 from iremote import IRemote
 
 def my_iremote_handler(event):
-if event == IRemote.NEXT:
-# Next button pressed
-# ...
+    if event == IRemote.NEXT:
+        # Next button pressed
+        # ...
 
 iremote = IRemote()
 iremote.add_listener(my_iremote_handler)
