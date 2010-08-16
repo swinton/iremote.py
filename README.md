@@ -7,14 +7,14 @@ Usage
 
 2. Construct your source code like so:
 
-    from iremote import IRemote
+        from iremote import IRemote
 
-    def my_iremote_handler(event):
-        if event == IRemote.NEXT:
-            # Next button pressed
-            # ...
+        def my_iremote_handler(event):
+            if event == IRemote.NEXT:
+                # Next button pressed
+                # ...
 
-    iremote = IRemote()
-    iremote.add_listener(my_iremote_handler)
-    iremote.start()
+        iremote = IRemote()
+        iremote.add_listener(my_iremote_handler)
+        iremote.start()
 
